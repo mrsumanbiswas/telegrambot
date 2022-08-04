@@ -25,8 +25,6 @@ MONGODB = os.environ["MONGODB"]
 """
 
 """
-for i in range(10):  # for test
-    print("Test!"+BOT_API+"\n"+MONGODB)
 
 # MONGODB CONNECTION
 
