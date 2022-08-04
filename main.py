@@ -19,8 +19,8 @@ from bs4 import BeautifulSoup
 
 ############  CODE  #############
 Type = 'cancel'
-BOT_API = os.environ("BOT_API")
-MONGODB = os.environ("MONGODB")
+BOT_API = os.environ["BOT_API"]
+MONGODB = os.environ["MONGODB"]
 # DATABASE CONNECTION #####
 """
 
