@@ -310,7 +310,10 @@ User Name : @{message.from_user.username}"""
         chat_id = message.chat.id
         fullName = f'{message.from_user.first_name} ' + \
             f'{message.from_user.last_name}'
-        Message = message.text
+        if Type != 'cancel':
+            Message = Type + ' : ' + message.text
+        else:
+            Message = message.text
 
         chatHistory(
             collection=dbConnect()['history'],
