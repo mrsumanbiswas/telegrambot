@@ -181,10 +181,15 @@ class main_handler():
             self.text(
                 """\
 /find --> search over internet
+
 /about --> gives info in audio format
+
 /pic --> gives photos form web
+
 /vaccine --> gives Indian vaccination slot info
+
 /details --> gives your telegram info
+
 /dizzy --> gives info about the bot
                 """
             )
@@ -208,7 +213,7 @@ class main_handler():
             if len(msg) == 6:
                 self.text(Vaccine(msg))
             else:
-                self.text("Please provide a valid Indian pincode")
+                self.text("Please provide a valid (Indian) pincode")
 
     def text(self, text: str):
         self.bot.send_message(
