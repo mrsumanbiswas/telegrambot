@@ -338,15 +338,4 @@ User Name : @{message.from_user.username}"""
 
 ########### Runner ##############
 if __name__ == "__main__":
-    try:
-        print("Bot is up and running!")
-        try:
-            main()
-        except:
-            main()
-    except:
-        try:
-            main()
-        except:
-            main()
-        print("Bot got some error!")
+    main()
